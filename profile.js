@@ -12,10 +12,10 @@ document.getElementById("btn-logout").addEventListener("click", () => {
 
 
 
-// Redirecting  to signup or profile based on storage  
+// Redirecting  to signup or Profile based on storage  
 document.getElementById("header-signup").addEventListener("click", () => {
     if(JSON.parse(localStorage.getItem("user") &&JSON.parse(localStorage.getItem("user" )).accessToken!="")){
-        window.location.href = 'profile.html';
+        window.location.href = 'Profile.html';
     }
     else {
         window.location.href = 'index.html'

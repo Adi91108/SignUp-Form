@@ -41,7 +41,7 @@ document.getElementById("btn-signup").addEventListener("click", () => {
 
         // Redirect to profile page after a delay
         setTimeout(function () {
-            window.location.href = "profile.html";
+            window.location.href = "Profile.html";
         }, 2000);
 
     }
@@ -53,7 +53,7 @@ document.getElementById("btn-signup").addEventListener("click", () => {
 document.getElementById('header-profile').addEventListener('click', () => {
     const user = JSON.parse(localStorage.getItem('user'));
     if (user && user.accessToken!="") {
-        window.location.href = "profile.html";
+        window.location.href = "Profile.html";
     } else {
         window.location.href = "index.html";
     }
